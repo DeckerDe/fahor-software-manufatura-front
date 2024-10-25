@@ -19,14 +19,12 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './components/ListItems.tsx';
 import Chart from './components/Chart';
-import Orders from './components/Orders';
-
 function Copyright(props: any) {
     return (
         <Typography variant="body2" color="text.secondary" align="center" {...props}>
             {'Copyright © '}
             <Link color="inherit" href="https://mui.com/">
-                Fahor Workshop Software para Manufatura
+                Workshop de Tecnologia
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -176,12 +174,6 @@ export default function Dashboard() {
                                     }}
                                 >
                                     <Chart />
-                                </Paper>
-                            </Grid>
-                            {/* Recent Orders */}
-                            <Grid item xs={12}>
-                                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                                    <Orders />
                                 </Paper>
                             </Grid>
                         </Grid>
